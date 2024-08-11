@@ -1,0 +1,279 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    position:relative;
+    
+    /* background-color: #333; */
+    
+
+}
+.hero{
+    width:100%;
+    min-height: 100vh;
+    background: rgb(231, 229, 229);
+    color: #525252;
+    
+}
+
+nav{
+    background-color:rgb(61, 133, 61) ;
+    width: 100%;
+    padding:10px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+
+
+    /**box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3rem);
+    position: relative;**/
+}
+
+.Logo{
+    width: 100px;
+    height: 70px;
+}
+.user-pic{
+    width: 60px;
+    border-radius: 60%;
+    cursor: pointer;
+    margin-left: 30px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+.sub-menu-wrap{
+    position: absolute;
+    top: 100%;
+    right: 10%;
+    width: 290px;
+    max-height: 0px;
+    overflow: hidden;
+}
+.sub-menu-wrap.open-menu{
+    max-height: 400px;
+
+}
+.sub-menu{
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+}
+.user-info{
+    display: flex;
+    align-items: center;
+    
+}
+.user-info h3{
+    font-weight: 500;
+  
+}
+.user-info img{
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 50px;
+
+}
+.sub-menu hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 15px 0 10px;
+}
+.sub-menu-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #525252;
+    margin: 12px 0;
+}
+.sub-menu-link p{
+    width: 100%;
+}
+.sub-menu-link img{
+    width: 40px;
+    background: #e5e5ee;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 15px;
+}
+.sub-menu-link span{
+    font-size: 20px;
+    transition: transform 0.5s;
+}
+.sub-menu-link:hover span{
+    transform: translateX(5px);
+}
+.sub-menu-link:hover p{
+    font-weight: 600;
+}
+
+
+/**.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem 1.3rem;
+}
+
+.navbar .logo{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 2.2rem;
+}
+#user-input{
+    max-width: 400px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    color: #333;
+}**/
+
+
+.h1{
+   text-align:center;
+   padding:  200px 20px 0px 0px;
+   
+
+}
+
+
+
+.box{
+    /*position: relative;
+    display: flex;
+    margin-top: 50px;
+    margin-left: 400px;
+    height: 50px;
+    width: 600px;
+    display: flex;
+    cursor: pointer;
+    padding: 20px 20px;
+    background: #fff;
+    border-radius: 50px;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);*/
+
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px auto; /* Center the box horizontally */
+    height: 50px;
+    max-width: 90%; /* Adjust the width to be responsive */
+    width: 600px; /* Default width */
+    cursor: pointer;
+    padding: 20px;
+    background: #fff;
+    border-radius: 50px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    transition: width 0.8s ease;
+
+    
+
+
+    
+
+    
+}
+.box:hover input{
+    width: 100%;
+}
+
+.box input{
+    width: 0;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    transition: width 0.8s ease;
+    background: transparent;
+
+}
+
+
+.box a {
+    position: absolute;
+    left: 20px; /* Initial position of the icon */
+    transition: left 0.8s ease; /* Smooth transition for icon position */
+}
+.box:hover a {
+    left: 550px; /* Move icon to the right on hover */
+}
+
+
+.box a .fas{
+    color: black;
+    font-size: 18px;
+}
+
+
+
+
+
+form {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between the icons */
+    padding: 1px 0;
+}
+
+.radio {
+    display: none; /* Hide the radio buttons */
+}
+
+.emoji {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+.tooltip {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Position above the emoji */
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 14px;
+}
+
+.emoji:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.emoji:hover {
+    color: #3D853D; /* Change color on hover */
+}
+
+input:checked + .emoji {
+    color: #3D853D; /* Highlight selected icon */
+}
+
+
+.p{
+    text-align:center;
+    padding:  20px 0;
+    font-size: 20px;
+}
