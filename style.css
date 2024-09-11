@@ -277,3 +277,31 @@ input:checked + .emoji {
     padding:  20px 0;
     font-size: 20px;
 }
+
+
+
+
+
+.emoji {
+    cursor: pointer;
+    font-size: 2rem;
+    margin: 10px;
+}
+
+.radio {
+    display: none; /* Hide the radio input */
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.emoji:hover .tooltip {
+    display: block;
+}
+
