@@ -21,7 +21,7 @@ body{
 }
 
 nav{
-    background-color:rgb(61, 133, 61) ;
+    background-color:rgb(111, 176, 197) ;
     width: 100%;
     padding:10px 10%;
     display: flex;
@@ -264,11 +264,11 @@ form {
 
 
 .emoji:hover {
-    color: #3D853D; /* Change color on hover */
+    color: rgb(80, 136, 187); /* Change color on hover */
 }
 
 input:checked + .emoji {
-    color: #3D853D; /* Highlight selected icon */
+    color: rgb(80, 136, 187); /* Highlight selected icon */
 }
 
 
@@ -305,3 +305,37 @@ input:checked + .emoji {
     display: block;
 }
 
+
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(111, 176, 197);
+    padding: 10px;
+}
+.logo img {
+    height: 40px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 16px;
+    padding: 8px;
+}
+
+.nav-links a:hover {
+    background-color: rgb(80, 136, 187);
+    border-radius: 5px;
+}

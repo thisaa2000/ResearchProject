@@ -48,7 +48,7 @@ ul {
 }
 
 .nav-links a:hover {
-    background-color: #555;
+    background-color: rgb(80, 136, 187);
     border-radius: 5px;
 }
 
@@ -64,6 +64,32 @@ ul {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
+/* Ensure the section content uses flexbox layout */
+.section-content {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Adjust the gap between image and text as needed */
+}
+
+/* Style for the images */
+.section-content img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px; /* Add margin on the right side of the image */
+}
+
+/* Style for the text next to the image */
+.text {
+    text-align: left;
+}
+
+/* Optional: Add padding to the text block if needed */
+.text {
+    padding-left: 500px; /* Adjust padding if you need more space on the left side of the text */
+}
+
 
 .back-btn {
     display: inline-block;
