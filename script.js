@@ -27,7 +27,7 @@ emojiForm.addEventListener('change', function(event) {
                 window.location.href = 'second-page-sad.html';
                 break;
             case 'surprised':
-                window.location.href = 'second-page-happy.html';
+                window.location.href = 'second-page-surprise.html';
                 break;
             default:
                 console.log('No action for selected mood.');
