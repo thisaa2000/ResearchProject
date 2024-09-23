@@ -21,10 +21,10 @@ emojiForm.addEventListener('change', function(event) {
                 window.location.href = 'second-page-happy.html';
                 break;
             case 'sad':
-                window.location.href = 'second-page-happy.html';
+                window.location.href = 'second-page-sad.html';
                 break;
             case 'angry':
-                window.location.href = 'second-page-happy.html';
+                window.location.href = 'second-page-sad.html';
                 break;
             case 'surprised':
                 window.location.href = 'second-page-happy.html';
